@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--
+            Antonette Petallo, 000900501, certify that this work is my own effort and that I have not allowed anyone else to copy from it.
+        -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>City Health and Wellness</title>
+        <style>
+        .navigation {
+            background-color: #FEE8B0;
+            width: 100%;
+            height: 40px;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            margin-top: 0;
+        }
+        .navigation a {
+            color: #F97B22;
+            padding: 0 35px;
+        }
+        .navigation a:hover {
+            color: white;
+        }
+        .navigation a:active {
+            color: black;
+        }
+
+        /* The 2 images that's centered */
+
+        #centered {
+            text-align: center;
+            letter-spacing: 10px;
+            padding-top: 4%;
+        }
+        #centered img {
+            display: inline-block;
+            vertical-align: middle;
+            width: 160px;
+            height: 110px;
+            margin: 0 auto;
+        }
+        #centered h2 {
+            display: inline-block;
+            letter-spacing: 10px;;
+        }
+
+        /* Image on the left and lists on the right */
+
+        #container {
+            display: flex;
+            margin-top: 60px;
+        }
+        .image-container {
+            width: 55%;
+            height: auto;
+            float: left;
+            margin-top: 15px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .text-container h2,
+        .text-container p {
+            margin-left: 20px;
+        }
+        .text-container ul {
+            list-style-type: none;
+            line-height: 2.5em;
+            padding: 0;
+        }
+        .healthy-list {
+            list-style-position: inside;
+        }
+        .tomato {
+            list-style-image: url(images/tomato_sm.jpg);
+            padding-left: 0;
+        }
+        .wheat {
+            list-style-image: url(images/wheat_sm.jpg);
+        }
+
+        /* Double underline */
+
+        .double {
+            text-decoration: underline;
+            text-decoration-style: double;
+            font-style: italic;
+        }
+
+        /* Color and style in between text */
+
+        .between{
+            color:#F97B22;
+            font-style: italic;
+        }
+
+        /* Check image that replaced the bullet */
+
+        #checked {
+            list-style-type: none;
+            list-style-image: url(images/orange_checkmark_sm.jpg);
+        }
+
+        /* Footer */
+
+        footer {
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90px;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            background-image: url(images/ricepaper.png);
+        }
+        footer p {
+            line-height: 2px;
+            text-align: center;
+        }
+        .footer-content {
+            text-align: center;
+            padding: 0px;
+        }
+        .footer-content p {
+            font-weight: bold;
+            font-style: italic;
+            color: black;
+        }
+
+        /* Body Whitespaces*/
+
+        body {
+            padding-left: 3em;
+            padding-right: 3em;
+            padding-bottom: 5em;
+            background-color: white;
+            margin-right: 3em;
+        }
+
+        /* Headings */
+
+        h2, h4 {
+            color: #F97B22;
+            font-family: verdana;
+        }
+        h1 {
+            color: #F97B22;
+            text-align: center;
+            font-family: verdana;
+        }
+        h3 {
+            color: #F97B22;
+            font-family: "Comic Sans MS";
+        }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" title="Healthy Eating">Healthy Eating</a></li>
+                    <li><a href="#" title="Fitness">Fitness</a></li>
+                    <li><a href="#" title="Mental Health">Mental Health</a></li>
+                    <li><a href="#contact" title="Contact Us">Contact Us</a></li>
+                </ul>
+            </nav>
+
+                <h1>Our City Health and Wellness</h1>
+                
+            <section id="centered">
+                <img src="images/veggies.jpg" alt="veggies image 1">
+                <h2>Healthy Eating</h2>
+                <img src="images/veggies.jpg" alt="veggies image 2">
+            </section>
+        </header>
+
+        <section id ="container">
+            <div class="image-container">
+                <img alt="vegetables" src="images/healthyplate.JPG">
+            </div>
+            <div class="text-container">
+                <h2>How to develop a healthy eating pattern</h2>
+                <p>You can develop a healthy eating pattern by:</p>
+                    <ul class="healthy-list">
+                        <li class="tomato">Eating more vegetables and fruits</li>
+                        <li class="tomato">dark green such as broccoli and bok choy</li>
+                        <li class="tomato">orange such as carrots</li>
+                        <li class="tomato">Selecting whole grain varieties of grain foods</li>
+                        <li class="wheat">whole grain pasta</li>
+                        <li class="wheat">whole grain bread</li>
+                        <li class="wheat">whole oats or oatmeal</li>
+                        <li class="wheat">whole grain brown or wild rice</li>
+                        <li class="tomato">Replacing meats higher in saturated fat with leaner varieties</li>
+                        <li class="tomato">Replcaing some of the meat in your meals with plant-based protein foods</li>
+                        <li class="tomato">Limiting highly processed foods</li>
+                    </ul>
+            </div>
+        </section>
+
+        <section>
+        <h2>Limit highly processed foods</h2>
+        <p>Highly processed foods are processed or prepared foods and drinks that add excess sodium, sugars or saturated fat to the diets of Canadians.</p>
+        <ul>
+            <li> <span class="double">How to limit higly processed foods</span>
+                <ul>
+                    <li>replace sugary drinks with water</li>
+                    <li>choose healthier menu options when eating out</li>
+                    <li>make homemade versions of your favourite highly processed foods</li>
+                </ul>
+            </li>
+            <li> <span class="double">Highly Processed Foods include</span>
+                <ul>
+                    <li>sugary drinks</li>
+                    <li>syrups and jams</li>
+                    <li>chocolate and candies</li>
+                    <li>potato chips and pretzels</li>
+                    <li>sauces, dressings and gravies</li>
+                    <li>ice cream and frozen desserts</li>
+                    <li>fast foods like French fries and burgers</li>
+                </ul>
+            </li>
+        </ul>
+        </section>
+        
+        <section>
+        <h3>Make Water your drink of choice</h3>
+        <p> You can <span class="between"> add fruits and herbs </span> to your hot or cold water for flavour.</p>
+            <ul>
+                <li>5 ways to add flavour to your water</li>
+                <ol type="a">
+                    <li>blackberries + mint</li>
+                    <li>raspberries + cucumber</li>
+                    <li>strawberries + fresh basil</li>
+                    <li>chopped apples + a cinnamon stick</li>
+                    <li>pear slices + a drop of vanilla extract</li>
+                </ol>
+                <li id="checked">If you like some fizz in your drink, try carbonated water.</li>
+                <li>Choose drinks that have little to no added sodium, sugars or saturated fat.</li>
+            </ul>
+        </section>
+
+        <section>
+        <h2>Resources</h2>
+            <ul>
+                <li><a href="https://food-guide.canada.ca/en/" target="_blank">Canada's Food Guide</a></li>
+                <ul>
+                    <li><a href="https://food-guide.canada.ca/en/tips-for-healthy-eating/" target="_blank">Tips for Healthy Eating</a></li>
+                    <li><a href="https://food-guide.canada.ca/en/healthy-eating-recommendations/limit-highly-processed-foods/" target="_blank">Limit highly processed foods</a></li>
+                </ul>
+                <li>Images are from <a href="http://unsplash.com" target="_blank">Unsplash.com</a></li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <footer>
+                <div class="footer-content">
+                    <h4>Contact Us</h4>
+                    <p>Antonette Petallo - Wellness Advisor</p>
+                    <p>Petallo Company</p>
+                </div>
+            </footer>
+        </section>
+    </body>
+</html>
